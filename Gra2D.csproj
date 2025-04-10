@@ -13,6 +13,13 @@
     <None Remove="laka.png" />
     <None Remove="las.png" />
     <None Remove="skala.png" />
+	  <None Remove="woda.png" />
+	  <None Remove="muszelka.png" />
+	  <None Remove ="glony.png" />
+	  <None Remove="rekin.png" />
+	  <None Remove="kilof.png" />
+	  <None Remove ="gruz.png" />
+	  <None Remove ="golem.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +27,13 @@
     <Resource Include="laka.png" />
     <Resource Include="las.png" />
     <Resource Include="skala.png" />
+	  <Resource Include="woda.png" />
+	  <Resource Include="muszelka.png" />
+	  <Resource Include="glony.png" />
+	  <Resource Include ="rekin.png" />
+	  <Resource Include="kilof.png" />
+	  <Resource Include="gruz.png" />
+	  <Resource Include="golem.png" />
   </ItemGroup>
 
 </Project>
