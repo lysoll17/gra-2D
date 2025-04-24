@@ -13,7 +13,7 @@
             <Button Content="Wczytaj mapę" Click="WczytajMape_Click" Margin="0,0,10,0"/>
             <Label Name="EtykietaDrewna" Content="Drewno: 0" FontSize="16"/>
 			<Label Name="EtykietaMuszelek" Content="Muszelki: 0" FontSize="16"/>
-            <Image x:Name="obraz" Height="100" Width="100" Source="/gracz.png"/>
+            <Image x:Name="obraz" Height="100" Width="100" Source="/gracz.png" Visibility="Hidden"/>
         </StackPanel>
         <!-- Kontener wyświetlający mapę -->
         <Grid Name="SiatkaMapy" Grid.Row="1" Background="LightGray"/>
