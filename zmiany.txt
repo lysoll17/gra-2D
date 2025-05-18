@@ -1,0 +1,11 @@
+dodałem kilof pozwalajacy na kopanie skał,
+po wykopaniu 3 skał pojawia sie golem,
+aby przejść na kolejny poziom trzeba zebrać 10 drewna,
+po wejściu na golema traci sie całe drewno oraz resetuje sie poziom,
+
+dodałem 2 poziom wodny,
+nie można wejsc na glony,
+po wejsciu na rekina traci sie wszystkie muszelki i poziom sie resetuje,
+po zebraniu 6 muszelek wygrywa sie gre
+
+ludzik na poczatku jest teraz niewidoczny dla gracza
