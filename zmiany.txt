@@ -9,3 +9,10 @@ po wejsciu na rekina traci sie wszystkie muszelki i poziom sie resetuje,
 po zebraniu 6 muszelek wygrywa sie gre
 
 ludzik na poczatku jest teraz niewidoczny dla gracza
+
+dodanie menu
+zmiana rozmiaru mapy 
+wczytywanie mapy po wciśnięciu graj
+kolor tła zmieniony dla danego poziomu
+usuniecie przycisku wczytaj mape
+zmiana rozmiarów obrazów

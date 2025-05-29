@@ -321,7 +321,7 @@ namespace Gra2D
         {
             MessageBox.Show("Gratulacje! Udało Ci się zebrać 7 drewna! Wygrałeś pierwszy poziom!");
             AktualizujPozycjeGracza(true, "../../../level-2.txt");
-            SiatkaMapy.Background = Brushes.AliceBlue;
+            body.Background = Brushes.Navy;
             EtykietaMuszelek.Content = "Muszelki: " + iloscMuszelek;
             jestKilof = 0;
             jestGolem = 0;

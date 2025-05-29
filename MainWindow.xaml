@@ -1,8 +1,10 @@
-﻿<Window x:Class="Gra2D.MainWindow"
+﻿<Window Name="body"
+        x:Class="Gra2D.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Gra WPF" Height="600" Width="800"
-        KeyDown="OknoGlowne_KeyDown">
+        KeyDown="OknoGlowne_KeyDown"
+        Background="#FF0A920D">
 
 
     <Grid >
@@ -27,7 +29,7 @@
             <Image x:Name="obraz" Height="100" Width="100" Source="/gracz.png" Visibility="Hidden"/>
 
             </StackPanel>
-            <Grid Name="SiatkaMapy" Grid.Row="1" HorizontalAlignment="Center" Background="ForestGreen"></Grid>
+            <Grid Name="SiatkaMapy" Grid.Row="1" HorizontalAlignment="Center"></Grid>
 
             <!-- Kontener wyświetlający mapę -->
         </StackPanel>
