@@ -10,6 +10,7 @@ namespace Gra2D
 {
     public partial class MainWindow : Window
     {
+        
         // Stałe reprezentujące rodzaje terenu
         public const int LAS = 1;     // las
         public const int LAKA = 2;     // łąka
@@ -350,6 +351,7 @@ namespace Gra2D
         private void Wygrana2Poziom()
         {
             MessageBox.Show("Gratulacje! Wygrałeś!");
+            Close();
         }
         private void ZakazWejsciaNaGlony(int nowyY, int nowyX)
         {
@@ -379,14 +381,23 @@ namespace Gra2D
         // Obsługa przycisku "Wczytaj mapę"
         private void WczytajMape_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog oknoDialogowe = new OpenFileDialog();
-            oknoDialogowe.Filter = "Plik mapy (*.txt)|*.txt";
-            oknoDialogowe.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory; // Ustawienie katalogu początkowego
-            bool? czyOtwartoMape = oknoDialogowe.ShowDialog();
-            if (czyOtwartoMape == true)
-            {
-                WczytajMape(oknoDialogowe.FileName);
-            }
+            AktualizujPozycjeGracza(true, "../../../level-1.txt");
+        }
+
+        private void jak_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("postać porusza sie strzałkami i zbiera klikajać przycisk C");
+            return;
+        }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void play_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

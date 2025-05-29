@@ -3,11 +3,22 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Gra WPF" Height="600" Width="800"
         KeyDown="OknoGlowne_KeyDown">
+
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <StackPanel Background="#FF3C91DA" Grid.RowSpan="2" Height="auto" Width="auto">
+            <Grid>
+                <Label Content="Przygody Jasia" Margin="246,25,246,-25" FontSize="30" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"></Label>
+                <Button Name="play" Content="Graj" Margin="296,136,296,-155" FontSize="30" FontWeight="Bold" Click="play_Click"></Button>
+                <Button Name ="exit" Content="Wyjdź" Margin="296,374,296,-393" FontSize="30" FontWeight="Bold" Click="exit_Click"></Button>
+                <Button Name="jak" Content="Jak grać?" Margin="296,252,296,-271" FontSize="30" FontWeight="Bold" Click="jak_Click"></Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel Visibility="Collapsed" >
         <!-- Panel sterowania -->
         <StackPanel Orientation="Horizontal" Margin="10">
             <Button Content="Wczytaj mapę" Click="WczytajMape_Click" Margin="0,0,10,0"/>
@@ -16,7 +27,8 @@
             <Image x:Name="obraz" Height="100" Width="100" Source="/gracz.png" Visibility="Hidden"/>
         </StackPanel>
         <!-- Kontener wyświetlający mapę -->
-        <Grid Name="SiatkaMapy" Grid.Row="1" Background="LightGray"/>
+        <Grid Name="SiatkaMapy" Grid.Row="1" Background="LightGray"></Grid>
+        </StackPanel>
     </Grid>
 </Window>
 
