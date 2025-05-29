@@ -4,6 +4,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace Gra2D
@@ -30,7 +31,7 @@ namespace Gra2D
         // Dwuwymiarowa tablica kontrolek Image reprezentujących segmenty mapy
         private Image[,] tablicaTerenu;
         // Rozmiar jednego segmentu mapy w pikselach
-        private const int RozmiarSegmentu = 32;
+        private const int RozmiarSegmentu = 64;
 
         // Tablica obrazków terenu – indeks odpowiada rodzajowi terenu
         // Indeks 1: las, 2: łąka, 3: skały
@@ -76,6 +77,7 @@ namespace Gra2D
             obrazyTerenu[KILOF] = new BitmapImage(new Uri("kilof.png", UriKind.Relative));
             obrazyTerenu[GRUZ] = new BitmapImage(new Uri("gruz.png", UriKind.Relative));
             obrazyTerenu[GOLEM] = new BitmapImage(new Uri("golem.png", UriKind.Relative));
+
         }
 
         // Wczytuje mapę z pliku tekstowego i dynamicznie tworzy tablicę kontrolek Image
@@ -319,6 +321,7 @@ namespace Gra2D
         {
             MessageBox.Show("Gratulacje! Udało Ci się zebrać 7 drewna! Wygrałeś pierwszy poziom!");
             AktualizujPozycjeGracza(true, "../../../level-2.txt");
+            SiatkaMapy.Background = Brushes.AliceBlue;
             EtykietaMuszelek.Content = "Muszelki: " + iloscMuszelek;
             jestKilof = 0;
             jestGolem = 0;
@@ -381,7 +384,7 @@ namespace Gra2D
         // Obsługa przycisku "Wczytaj mapę"
         private void WczytajMape_Click(object sender, RoutedEventArgs e)
         {
-            AktualizujPozycjeGracza(true, "../../../level-1.txt");
+            //AktualizujPozycjeGracza(true, "../../../level-1.txt");
         }
 
         private void jak_Click(object sender, RoutedEventArgs e)
@@ -397,7 +400,9 @@ namespace Gra2D
 
         private void play_Click(object sender, RoutedEventArgs e)
         {
-
+            menu.Visibility = Visibility.Collapsed;
+            gra.Visibility = Visibility.Visible;
+            AktualizujPozycjeGracza(true, "../../../level-1.txt");
         }
     }
 }
