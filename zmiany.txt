@@ -16,3 +16,4 @@ wczytywanie mapy po wciśnięciu graj
 kolor tła zmieniony dla danego poziomu
 usuniecie przycisku wczytaj mape
 zmiana rozmiarów obrazów
+usuniecie tła obrazów takich jak: kilof.png, reing.png
